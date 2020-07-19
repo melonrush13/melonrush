@@ -1,13 +1,17 @@
 import React from "react"
+import Header from "../components/header"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+const About = () => {
+    return (
+        <div>
+            <Header headerText="About Page"/>
+            <h1>Mel Rush</h1>
+            <p>Hey that's me!</p>
+            <Link to="/">Go back to the homepage</Link>
 
-const About = () => (
-  <Layout>
-    <h1>Hi from the about page</h1>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+        </div>
+    )
+}
 
 export default About
